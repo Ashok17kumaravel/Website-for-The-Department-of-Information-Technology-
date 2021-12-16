@@ -7,3 +7,7 @@
 <li>This Website is built with PWA concept</li>
 <li>A blog page for the students</li>
 <li>Notification Tab</li>
+ </ol>
+ 
+<h1>Live</h1>https://departmentwebsite.surge.sh/
+  
