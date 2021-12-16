@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+   
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--====== Title ======-->
+    <title>Login</title>
+    <link rel="manifest" href="manifest.json">
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="css/nice-select.css">
+    
+    <!--====== Nice Number css ======-->
+    <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="css/default.css">
+    
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="css/responsive.css">
+  
+  
+</head>
+<style>
+    body{
+      width: 100%;
+      /* height: 400px; */
+      background-image: url('./smv.png');
+      background-size: 100% 100%;
+      border: 1px solid red;
+    }
+    </style>
+<body>
+   
+    <!--====== PRELOADER PART START ======-->
+    
+    <div class="preloader">
+        <div class="loader rubix-cube">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3 color-1"></div>
+            <div class="layer layer-4"></div>
+            <div class="layer layer-5"></div>
+            <div class="layer layer-6"></div>
+            <div class="layer layer-7"></div>
+            <div class="layer layer-8"></div>
+        </div>
+    </div>
+    
+    <!--====== PRELOADER PART START ======-->
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header id="header-part">
+        <div class="header-top d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header-contact text-lg-left text-center">
+                            <ul>
+                                <li><img src="images/all-icon/call.png" alt="icon"><span>Phone: + 91 89730 05555, 0413 264 2001</span></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-opening-time text-lg-right text-center">
+                            <p> <img src="images/all-icon/email.png" alt="icon"> <a href = "mailto: hodit@smvec.ac.in" style="color: azure;"> hodit@smvec.ac.in, raju@smvec.ac.in</a></p>
+                            
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
+       
+        
+        
+           <style>
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+	font-family: "Roboto";
+}
+div.containersign {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 3px;
+	/* border: 1px solid whitesmoke;
+	padding: 21px; */
+	border-radius: 4px;
+}
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--omrs-color-interaction: #1e4bd1;
+	--omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+	--omrs-color-danger: #b50706;
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+	--omrs-color-bg-high-contrast: #ffffff;
+	
+}
+/** 
+<div class="omrs-input-group containersign" style="
+    margin-bottom: 0px;
+">
+            <label class="omrs-input-underlined">
+              <input required="" type="email" style="margin: auto; width: 100%; align-items: center;" placeholder="Email" name="" id="email">
+              
+            
+            </label>
+        </div>END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1rem;
+  position: relative;
+ 
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.omrs-input-underlined > svg,
+.omrs-input-filled > svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+	font-size: 0.9375rem;
+	color: var(--omrs-color-ink-medium-contrast);
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+	background: var(--omrs-color-interaction-minus-two);
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+	border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+	fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined > input:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+
+
+/** DANGER **/
+
+.omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+.omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+	color: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > svg {
+	fill: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > input {
+	border-color: var(--omrs-color-danger);
+}
+
+.omrs-input-underlined > input {
+	background: var(--omrs-color-bg-high-contrast);
+}
+.omrs-input-filled > input {
+	background: var(--omrs-color-bg-low-contrast);
+}
+
+
+
+
+
+
+
+
+.btn {
+  background: #1f4870;
+  background-image: -webkit-linear-gradient(top, #1f4870, #07294d);
+  background-image: -moz-linear-gradient(top, #1f4870, #07294d);
+  background-image: -ms-linear-gradient(top, #1f4870, #07294d);
+  background-image: -o-linear-gradient(top, #1f4870, #07294d);
+  background-image: linear-gradient(to bottom, #1f4870, #07294d);
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 25px;
+  font-family: Georgia;
+  color: #f0ec0c;
+  font-size: 17px;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d0dfe8;
+  background-image: -webkit-linear-gradient(top, #d0dfe8, #274559);
+  background-image: -moz-linear-gradient(top, #d0dfe8, #274559);
+  background-image: -ms-linear-gradient(top, #d0dfe8, #274559);
+  background-image: -o-linear-gradient(top, #d0dfe8, #274559);
+  background-image: linear-gradient(to bottom, #d0dfe8, #274559);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+          #content-desktop {display: block;}
+          #content-mobile {display: none;}
+          
+          @media screen and (max-width: 768px) {
+          
+          #content-desktop {display: none;}
+          #content-mobile {display: block;}
+          
+          }
+          </style>
+        <div class="header-logo-support" id="content-mobile">
+            <div class="col-lg-4 col-md-4">
+                <div class="logo">
+                    
+                        <img src="images/pp.png" alt="Logo">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header-logo-support" id="content-desktop">
+            <div class="container" id="content-desktop">
+                <div>
+                    <img src="./images/smvec-logo.png" alt="">
+                </div>
+            </div> <!-- container -->
+        </div>
+   </header>
+    <br><br><br>
+   
+<section style="margin: auto;">
+    <div style="margin: auto;text-align: center; width: 50%;">
+        <div class="section-titlee" data-aos="fade-up">
+            <h2>Sign In<strong></strong></h2>
+          </div>
+        <!-- <input  type="email" style="margin: auto; width: 50%;" name="" placeholder="Email"  id="emaillogin">
+        <br>
+        <br>
+        <input type="password" style="margin: auto; width: 50%;" name="" placeholder="Password" id="passlogin">
+        <br>
+        <br>
+        <br>
+        <a class="btn btn-warning" style="margin: auto; width: 50%;" id="login"  role="button">login</a>
+        <br>
+        <br>
+        <a class="btn btn-danger" style="margin: auto; width: 50%;" href="stafflog.html" role="button">Staff Portal</a>
+        <br>
+        <br>
+        <a class="btn btn-info" style="margin: auto; width: 50%;" href="signup.html" role="button">Sign Up</a> -->
+
+        <img src="https://ncdrc.res.in/ndsc/img/smvec-logo.png" style="padding-bottom: 20px; margin: auto; " >
+        <div class="omrs-input-group containersign" style="
+        margin: 0px; padding: 0px;">
+          <label class="omrs-input-underlined">
+            <input required  type="email" style="margin: auto; width: 100%; " placeholder="Email" name=""  id="emaillogin">
+            
+          
+          </label>
+      </div>
+      <div class="omrs-input-group containersign">
+          <label class="omrs-input-underlined">
+            <input required  type="password" style="margin: auto; width: 100%;" placeholder="Password" name=""  id="passlogin">
+            
+          
+          </label>
+      </div>
+      
+      <br>
+      <a class="btn" style="margin: auto; width: 50%; color: #f0ec0c;" id="login"  role="button">Login</a>
+      <br>
+      <!-- <br>
+      <a class="btn" style="margin: auto; width: 50%;  color: #f0ec0c;" href="https://itstaff.surge.sh" role="button">Staff</a>
+      <br>
+      <br>
+      <a class="btn" style="margin: auto; width: 50%;  color: #f0ec0c;" href="https://smvecitguest.surge.sh/" role="button">Guest</a>
+      <br>
+      <br>
+      <a class="btn" style="margin: auto; width: 50%;  color: #f0ec0c;" href="signup.html" role="button">Sign Up</a> -->
+    </div>
+
+</section>
+
+<br>
+<br>
+
+
+<script>
+    
+    window.onload = () => {
+    
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+              .register('./service-worker.js');
+    }
+    
+    }
+    
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAC-vI4-URfZiJ7qFVGX4rLWnaSZrGn1PA",
+          authDomain: "itweb-3edac.firebaseapp.com",
+          projectId: "itweb-3edac",
+          storageBucket: "itweb-3edac.appspot.com",
+          messagingSenderId: "429367249416",
+          appId: "1:429367249416:web:65b3a9c2111dfbef6e5fbd"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById('login').addEventListener('click' ,function(){
+
+            const email1 = document.getElementById("emaillogin").value
+            const password1 = document.getElementById("passlogin").value
+            console.log('btn clk');
+            signInWithEmailAndPassword(auth, email1, password1)
+            .then((userCredential) => {
+             // Signed in 
+            const user = userCredential.user;
+            console.log("Logged In");
+            onAuthStateChanged(auth, (user) => {
+            if (user) 
+            {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                const uid = user.uid;
+                 window.location.href="./Home.html";
+            } 
+            else
+            {
+                    // User is signed out
+                    // ...
+                window.location.href="nouser.html";
+            }
+
+  });
+        })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode+errorMessage)
+  });
+            
+})
+      </script>
+
+<script>
+    window.onload = () => {
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+              .register('./service-worker.js');
+    }
+
+  }
+  </script>
+   
+    <!--====== FOOTER PART START ======-->
+    <footer>
+        
+        <div class="footer-copyright pt-10 pb-25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="copyright text-md-left text-center pt-15">
+                           <br>
+                            <p>© Copyright SMVEC. All Rights Reserved</a> </p>
+                            
+                            <p>Developed by <a href="https://nodsync.surge.sh/" style="color: azure;">Nodsync</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        
+                           
+                                <div class="footer-about mt-40">
+                                    <div class="logo">
+                                        <a href="#"><img src="images/all-icon/smvec.png" alt="Logo"></a>
+                                    </div>
+                                    
+                                </div> <!-- footer about -->
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+   
+    <!--====== BACK TO TP PART START ======-->
+    
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    <!--====== BACK TO TP PART ENDS ======-->
+   
+    
+    
+    
+    
+    
+    
+    
+    <!--====== jquery js ======-->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="js/slick.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Counter Up js ======-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    
+    <!--====== Nice Select js ======-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    
+    <!--====== Nice Number js ======-->
+    <script src="js/jquery.nice-number.min.js"></script>
+    
+    <!--====== Count Down js ======-->
+    <script src="js/jquery.countdown.min.js"></script>
+    
+    <!--====== Validator js ======-->
+    <script src="js/validator.min.js"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="js/ajax-contact.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="js/main.js"></script>
+    
+    <!--====== Map js ======-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    <script src="js/map-script.js"></script>
+
+</body>
+</html>
